@@ -7,6 +7,7 @@
 #include "MultiSmoothParticleIC.h"
 #include "MooseRandom.h"
 #include "MooseMesh.h"
+#include "MooseVariable.h"
 
 template<>
 InputParameters validParams<MultiSmoothParticleIC>()
