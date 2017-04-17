@@ -22,6 +22,7 @@
 #include "ACParticleGrowth.h"
 #include "ElectricFieldKernel.h"
 #include "ElectricBCKernel.h"
+#include "VacancyAnnihilationKernel.h"
 #include "VacancySourceTermKernel.h"
 #include "RandomVacancySourceTermKernel.h"
 #include "LangevinNoiseVoid.h"
@@ -146,6 +147,7 @@ CrowApp::registerObjects(Factory & factory)
   registerKernel(LangevinNoiseVoid);
   registerKernel(RigidBodyMotionKernel);
   registerKernel(RadiationDefectSource);
+  registerKernel(VacancyAnnihilationKernel);
   registerFunction(RandomNumberGeneration);
 
   registerMaterial(PFDiffusion);
