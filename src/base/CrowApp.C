@@ -52,6 +52,7 @@
 #include "ElectricBCMat.h"
 #include "RadiationDefectSource.h"
 #include "RadiationDefectCreation.h"
+#include "PolyRadiationDefectCreation.h"
 
 #include "PolycrystalSinteringKernelAction.h"
 #include "PolycrystalSinteringMaterialAction.h"
@@ -169,6 +170,7 @@ CrowApp::registerObjects(Factory & factory)
   registerMaterial(SinteringDiffusion);
   registerMaterial(ElectricBCMat);
   registerMaterial(RadiationDefectCreation);
+  registerMaterial(PolyRadiationDefectCreation);
 
   registerInitialCondition(TwoParticleGrainsIC);
   registerInitialCondition(TwoParticleDensityIC);
