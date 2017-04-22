@@ -22,5 +22,5 @@ RadiationDefectSource::RadiationDefectSource(const InputParameters & parameters)
 Real
 RadiationDefectSource::computeQpResidual()
 {
-  return -_defect_increase[_qp];
+  return -_defect_increase[_qp] * _test[_i][_qp];
 }
