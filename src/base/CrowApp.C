@@ -53,6 +53,7 @@
 #include "RadiationDefectSource.h"
 #include "RadiationDefectCreation.h"
 #include "PolyRadiationDefectCreation.h"
+#include "Porosity.h"
 
 #include "PolycrystalSinteringKernelAction.h"
 #include "PolycrystalSinteringMaterialAction.h"
@@ -179,6 +180,7 @@ CrowApp::registerObjects(Factory & factory)
   //registerFunction(MobilityFn);
   registerAux(RandomVoidSourceAux);
   registerPostprocessor(InterfaceAreaPostprocessor);
+  registerPostprocessor(Porosity);
   // registerPostprocessor(ConservationCheck);
 
   registerUserObject(ConservedUniformVoidSource);
